@@ -1,0 +1,22 @@
+POLÍTICA DE PRIVACIDADE DO TRADUTOR MSA
+
+Última atualização: 06 de Fevereiro de 2026
+
+1. INTRODUÇÃO
+O "Tradutor MSA" ("nós", "nosso" ou "extensão") é uma extensão de navegador desenvolvida para fornecer serviços de tradução rápidos e eficientes. Respeitamos sua privacidade e estamos comprometidos em proteger seus dados. Esta política explica como lidamos com as informações.
+
+2. COLETA DE DADOS
+O Tradutor MSA não coleta, armazena ou vende dados pessoais dos usuários. Não mantemos registros de histórico de navegação, cookies de rastreamento ou informações de identificação pessoal.
+
+3. USO DE API DE TERCEIROS
+Para realizar as traduções, esta extensão envia o texto inserido pelo usuário para a API pública do MyMemory (mymemory.translated.net).
+- Apenas o texto que você explicitamente insere ou seleciona para tradução é enviado.
+- O MyMemory pode processar esse texto para fornecer a tradução. Recomendamos revisar a política de privacidade deles se tiver preocupações sobre o conteúdo traduzido.
+
+4. PERMISSÕES DO NAVEGADOR
+A extensão solicita as seguintes permissões para funcionar:
+- "activeTab": Para permitir a interação com a aba atual quando você abre a extensão.
+- "scripting": Para funcionalidades técnicas internas (atualmente não utilizadas para modificar páginas, mas reservadas para melhorias futuras).
+
+5. CONTATO
+Se você tiver dúvidas sobre esta política, entre em contato através do canal de suporte na página da loja da extensão.

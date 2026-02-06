@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tradutor Rápido Edge",
+  "version": "1.0",
+  "description": "Extensão de tradução simples e rápida.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Traduzir"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

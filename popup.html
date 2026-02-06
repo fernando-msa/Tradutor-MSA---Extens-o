@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradutor</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Tradutor Rápido</h1>
+    </div>
+
+    <div class="language-controls">
+      <select id="sourceLang">
+        <option value="autodetect">Detectar Idioma</option>
+        <option value="pt-BR">Português</option>
+        <option value="en-US">Inglês</option>
+        <option value="es-ES">Espanhol</option>
+        <option value="fr-FR">Francês</option>
+        <option value="de-DE">Alemão</option>
+        <option value="it-IT">Italiano</option>
+      </select>
+      <button id="swapParams" title="Inverter Idiomas">⇄</button>
+      <select id="targetLang">
+        <option value="en-US" selected>Inglês</option>
+        <option value="pt-BR">Português</option>
+        <option value="es-ES">Espanhol</option>
+        <option value="fr-FR">Francês</option>
+        <option value="de-DE">Alemão</option>
+        <option value="it-IT">Italiano</option>
+      </select>
+    </div>
+
+    <div class="translation-area">
+      <textarea id="sourceText" placeholder="Digite o texto aqui..."></textarea>
+      <textarea id="targetText" placeholder="Tradução..." readonly></textarea>
+    </div>
+
+    <div class="actions">
+      <button id="translateBtn">Traduzir</button>
+      <span id="statusMessage"></span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
