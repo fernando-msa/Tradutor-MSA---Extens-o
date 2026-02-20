@@ -1,11 +1,18 @@
 {
   "manifest_version": 3,
   "name": "Tradutor MSA Extensão",
-  "version": "1.0",
+  "version": "2.1",
   "description": "Extensão de tradução simples e rápida.",
+  "icons": {
+    "16": "440x280_Tradutor.png",
+    "48": "440x280_Tradutor.png",
+    "128": "440x280_Tradutor.png"
+  },
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "contextMenus",
+    "storage"
   ],
   "action": {
     "default_popup": "popup.html",

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permissão de Microfone - Tradutor MSA</title>
+    <link rel="icon" href="440x280_Tradutor.png">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-color: #f8fafc;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --text-main: #f1f5f9;
+                --text-muted: #94a3b8;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 2rem;
+            background-color: var(--bg-color);
+            /* Usually card-bg, but let's keep it simple */
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        #micBtn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        #micBtn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .success {
+            color: #10b981;
+            font-weight: bold;
+            display: none;
+        }
+
+        .error {
+            color: #ef4444;
+            font-weight: bold;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🎙️ Ativar Microfone</h1>
+        <p>Para usar o recurso de voz na extensão, precisamos da sua permissão. Clique abaixo e autorize o acesso quando
+            o navegador solicitar.</p>
+
+        <button id="micBtn">Habilitar Microfone</button>
+
+        <p class="success" id="successMsg">Microfone ativado! Você pode fechar esta aba.</p>
+        <p class="error" id="errorMsg">Permissão negada. Verifique as configurações do navegador.</p>
+    </div>
+
+    <script src="permission.js"></script>
+</body>
+
+</html>

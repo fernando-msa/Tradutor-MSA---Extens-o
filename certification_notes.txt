@@ -1,17 +1,34 @@
-Esta extensão é uma ferramenta de tradução simples que utiliza a API pública do MyMemory. Não requer criação de conta, login ou configuração de chaves de API para ser utilizada.
+Esta extensão é uma ferramenta de tradução completa que utiliza a API pública do MyMemory.
+Novidades da Versão 2.0: Histórico, Tradução por Voz e Menu de Contexto.
 
-Instruções para teste:
-1. Clique no ícone da extensão na barra de ferramentas do navegador para abrir o popup.
-2. Na área de texto superior ("Texto original"), digite ou cole uma frase para teste (ex: "Hello world").
-3. Certifique-se de que os idiomas de origem e destino estão selecionados corretamente (o padrão é "Autodetect" para "Português").
-4. Clique no botão "Traduzir" ou pressione "Ctrl+Enter".
-5. O resultado da tradução aparecerá na área de texto inferior ("Tradução").
+Instruções para Teste:
 
-Funcionalidades adicionais para verificar:
-- Detecção automática de idioma (selecione "Autodetect" na origem).
-- Inversão de idiomas: Clique no botão de setas entre os seletores de idioma para trocar a origem com o destino.
-- Validação: Tentar traduzir sem texto deve não realizar ação ou mostrar comportamento padrão.
+1. TRADUÇÃO BÁSICA:
+   - Clique no ícone da extensão.
+   - Digite o texto e clique em "Traduzir".
+   - Teste a inversão de idiomas com o botão de setas. n
+
+2. RECONHECIMENTO DE VOZ (NOVO):
+   - Clique no ícone do microfone.
+   - Na primeira vez, uma janela pop-up abrirá solicitando permissão. Clique em "Habilitar Microfone" e "Permitir".
+   - Fale uma frase e verifique se o texto aparece na caixa.
+
+3. HISTÓRICO (NOVO):
+   - Faça algumas traduções.
+   - Clique na aba "Histórico" no topo.
+   - Verifique se as traduções estão listadas.
+   - Clique em um item do histórico para carregá-lo novamente no tradutor.
+
+4. MENU DE CONTEXTO (NOVO):
+   - Navegue em qualquer site.
+   - Selecione um trecho de texto.
+   - Clique com o botão direito e selecione "Traduzir com Tradutor MSA".
+   - Uma janela da extensão deve abrir automaticamente com a tradução.
+
+5. TEXT-TO-SPEECH:
+   - Após traduzir, clique no ícone de som na caixa de resultado para ouvir a pronúncia.
 
 Observações:
-- A extensão necessita de conexão com a internet para acessar a API de tradução (api.mymemory.translated.net).
-- Nenhuma informação pessoal do usuário é coletada ou armazenada.
+- Não requer conta ou login.
+- Necessita de internet para a API (api.mymemory.translated.net).
+- Nenhuma informação pessoal é coletada.

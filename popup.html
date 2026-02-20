@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tradutor MSA Extensão</title>
   <link rel="stylesheet" href="popup.css">
+  <link rel="icon" href="440x280_Tradutor.png">
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -13,8 +14,13 @@
 <body>
   <div class="app-container">
     <header>
-      <div class="logo-area">
-        <h1>Tradutor MSA</h1>
+      <div class="header-top">
+        <div class="logo-area">
+          <h1>Tradutor MSA</h1>
+        </div>
+        <button id="supportBtn" class="icon-btn-sm" title="Ajuda e Suporte">
+          <span class="material-icons">help_outline</span>
+        </button>
       </div>
       <nav class="tabs">
         <button class="tab-btn active" data-tab="translator">
@@ -25,6 +31,16 @@
         </button>
       </nav>
     </header>
+
+    <div id="reviewBanner" class="review-banner" style="display: none;">
+      <div class="review-content">
+        <p>Gostando da extensão? Avalie-nos na loja!</p>
+        <div class="review-actions">
+          <button id="rateBtn" class="rate-btn">Avaliar</button>
+          <button id="closeRateBtn" class="close-rate-btn">Já avaliei / Fechar</button>
+        </div>
+      </div>
+    </div>
 
     <main id="translator-view" class="view active">
       <div class="language-selector">
@@ -57,6 +73,9 @@
         <div class="textarea-container">
           <textarea id="targetText" readonly placeholder="Tradução..."></textarea>
           <div class="tools">
+            <select id="voiceSelect" class="voice-select" title="Selecionar Voz">
+              <option value="">Voz Padrão</option>
+            </select>
             <button id="speakBtn" class="tool-btn" title="Ouvir">
               <span class="material-icons">volume_up</span>
             </button>
